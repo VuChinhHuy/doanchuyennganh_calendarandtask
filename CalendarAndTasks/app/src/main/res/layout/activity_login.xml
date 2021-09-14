@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/set_fragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_200">
+
+
+            <View
+                android:id="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sw_120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/wave"/>
+            <ImageView
+                android:id="@+id/image_login"
+                android:layout_width="@dimen/sw_150dp"
+                android:layout_height="@dimen/sw_180dp"
+                android:src="@drawable/ic_daily_tasks"
+                android:layout_marginLeft="@dimen/sw_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/sw_50dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="@dimen/sw_10dp"
+                android:text="@string/sign_in_to_get_started"
+                android:textSize="@dimen/sw_33sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_login" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.05"
+                android:maxWidth="@dimen/sw_100dp"
+                app:startIconDrawable="@drawable/ic_account_box_24"
+                app:layout_constraintTop_toBottomOf="@id/txt_sign_in"
+                android:hint="Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:maxWidth="@dimen/sw_100dp"
+                app:startIconDrawable="@drawable/ic_password"
+                app:layout_constraintTop_toBottomOf="@id/outlinedUser"
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:hint="Password"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account_with_email"
+                android:textSize="@dimen/sw_20dp"
+                android:textAppearance="@style/Widget.MaterialComponents.TextView"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@id/outlinedPassword"
+
+                app:layout_constraintTop_toBottomOf="@id/outlinedPassword" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/action_sign_in_short"
+                app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+                />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_login"
+                app:constraint_referenced_ids="textView,fab_google"
+                app:flow_horizontalGap="@dimen/sw_12dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fab_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:borderWidth="0dp"
+                android:text="Google"
+                app:fabCustomSize="@dimen/sw_60dp"
+                app:icon="@drawable/ic_google"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:iconTint="@color/red_400"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sw_10dp"
+                android:text="Sign in with"
+                android:textSize="@dimen/sw_22sp"
+                android:textStyle="italic"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_return"
+        android:layout_width="@dimen/sw_60dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:icon="@drawable/ic_arrow_back"
+        app:iconSize="@dimen/sw_35dp"
+        app:iconTint="@color/black_900_alpha_060"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_group_fab"
+        android:textSize="@dimen/sw_25sp"
+        android:fontFamily="@font/patrick_hand"
+        app:layout_constraintStart_toEndOf="@id/btn_return"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/sw_10dp"
+        />
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sw_10dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sw_23sp"
+        app:layout_constraintVertical_bias="1"
+        android:textColor="@color/blue_800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/view_transition"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_margin="@dimen/sw_10dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+        layout="@layout/group_task_item_layout"
+        />
+
+    <EditText
+        android:id="@+id/title_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sw_10dp"
+        android:background="@drawable/txt_bg"
+        android:elevation="4dp"
+        android:paddingStart="@dimen/sw_20dp"
+        android:paddingTop="@dimen/sw_10dp"
+        android:paddingBottom="@dimen/sw_10dp"
+        android:singleLine="true"
+        android:hint="Title list tasks"
+        android:textSize="@dimen/sw_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_transition"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/color"
+            android:layout_marginTop="@dimen/sw_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_add"
+            app:singleSelection="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+        </com.google.android.material.chip.ChipGroup>
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_margin="@dimen/sw_10dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

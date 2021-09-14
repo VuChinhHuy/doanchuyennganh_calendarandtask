@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.calendarandtasks.ui.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_taskInGroupFragment"
+            app:destination="@id/taskInGroupFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@navigation/navigation_graph"/>
+        <action
+            android:id="@+id/action_calendarFragment_to_addGroupFragment"
+            app:destination="@id/addGroupFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_editGroupFragment"
+            app:destination="@id/editGroupFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_calendarFragment"
+        app:destination="@+id/calendarFragment"
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true"
+        app:popUpTo="@navigation/navigation_graph"/>
+    <fragment
+        android:id="@+id/taskInGroupFragment"
+        android:name="com.example.calendarandtasks.ui.tasks.TasksInGroupFragment"
+        android:label="TaskInGroupFragment"
+        >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+
+             />
+        <argument
+            android:name="groupTitle"
+            app:argType="string"
+            android:defaultValue="title"/>
+        <action
+            android:id="@+id/action_taskInGroupFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.calendarandtasks.ui.search.SearchFragment"
+        android:label="SearchFragment" />
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@+id/searchFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.calendarandtasks.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <action
+        android:id="@+id/action_global_profileFragment"
+        app:destination="@+id/profileFragment" />
+    <fragment
+        android:id="@+id/todayFragment"
+        tools:layout="@layout/today_fragment"
+        android:name="com.example.calendarandtasks.ui.tasks.TodayFragment"
+        android:label="TodayFragment" />
+    <action
+        android:id="@+id/action_global_todayFragment"
+        app:destination="@+id/todayFragment"/>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.calendarandtasks.ui.tasks.AddTaskFragment"
+        android:label="AddTaskFragment" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addGroupFragment"
+        android:name="com.example.calendarandtasks.ui.calendar.AddGroupFragment"
+        android:label="AddGroupFragment" />
+    <fragment
+        android:id="@+id/editGroupFragment"
+        android:name="com.example.calendarandtasks.ui.calendar.EditGroupFragment"
+        android:label="EditGroupFragment" >
+        <argument android:name="groupId"
+            app:argType="string"/>
+    </fragment>
+
+
+
+</navigation>

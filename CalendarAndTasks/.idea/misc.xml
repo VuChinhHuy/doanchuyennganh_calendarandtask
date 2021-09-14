@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.3138888888888889" />
+        <entry key="app/src/main/res/drawable/asl_edit_reply.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/avatar_none.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/drawable/avd_edit_to_add.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/avd_reply_to_edit.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.30462962962962964" />
+        <entry key="app/src/main/res/drawable/bg_date_pick.xml" value="0.28055555555555556" />
+        <entry key="app/src/main/res/drawable/bg_task_item.xml" value="0.28055555555555556" />
+        <entry key="app/src/main/res/drawable/bottom_app_bar_title_foreground.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/drawable/calendar.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/color.xml" value="0.28425925925925927" />
+        <entry key="app/src/main/res/drawable/diet.xml" value="0.31296296296296294" />
+        <entry key="app/src/main/res/drawable/ic_access.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_account_box_24.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/drawable/ic_add_task.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.28055555555555556" />
+        <entry key="app/src/main/res/drawable/ic_facebook.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_google.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_image_screen_2.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.30462962962962964" />
+        <entry key="app/src/main/res/drawable/ic_online_shopping.xml" value="0.31296296296296294" />
+        <entry key="app/src/main/res/drawable/ic_password.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/ic_wave_3.xml" value="0.28425925925925927" />
+        <entry key="app/src/main/res/drawable/txt_bg.xml" value="0.2326388888888889" />
+        <entry key="app/src/main/res/drawable/wave.xml" value="0.23472222222222222" />
+        <entry key="app/src/main/res/drawable/wave_login.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/drawable/wave_profile.xml" value="0.28425925925925927" />
+        <entry key="app/src/main/res/drawable/working.xml" value="0.31296296296296294" />
+        <entry key="app/src/main/res/font/annie_use_your_telescope.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/font/patrick_hand.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/font/work_sans.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout-w1240dp/fragment_bottom_nav_drawer.xml" value="0.10776439089692101" />
+        <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.232421875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/add_group_tasks_layout.xml" value="0.232421875" />
+        <entry key="app/src/main/res/layout/add_tasks_layout.xml" value="0.232421875" />
+        <entry key="app/src/main/res/layout/attachment_details_item.xml" value="0.16893115942028986" />
+        <entry key="app/src/main/res/layout/bottom_sheet_fragment.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/chip_color.xml" value="0.19746376811594202" />
+        <entry key="app/src/main/res/layout/detail_item_layout.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/dialog_fragment_details_task.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/edit_profile_fragment.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/fragment_bottom_nav_drawer.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_edit_group.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.232421875" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.19746376811594202" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.20101351351351351" />
+        <entry key="app/src/main/res/layout/fragment_tasks_in_group.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.19746376811594202" />
+        <entry key="app/src/main/res/layout/fragment_with_tasks.xml" value="0.16495901639344263" />
+        <entry key="app/src/main/res/layout/group_task_item_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/menu_bottom_sheet_dialog_layout.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/pick_time_dialog.xml" value="0.1933876811594203" />
+        <entry key="app/src/main/res/layout/task_item_layout.xml" value="0.484251968503937" />
+        <entry key="app/src/main/res/layout/today_fragment.xml" value="0.21" />
+        <entry key="app/src/main/res/menu/group_bottom_sheet_menu.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/menu/menu_bottom.xml" value="0.232421875" />
+        <entry key="app/src/main/res/menu/task_bottom_sheet_menu.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/menu/task_in_group_menu.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.30462962962962964" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

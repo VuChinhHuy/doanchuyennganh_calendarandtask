@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="tasks"
+            type="com.example.calendarandtasks.data.model.Task"/>
+        <variable
+            name="listener"
+            type="com.example.calendarandtasks.util.adapter.TasksAdapter.TasksAdapterListener"/>
+
+    </data>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sw_10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:onLongClick="@{(view)->  listener.onTaskLongPressed(view,tasks)}">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/check_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"/>
+            <TextView
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:id="@+id/title_task"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{tasks.titleTask}"
+                android:textSize="@dimen/sw_23sp"
+                android:gravity="center_vertical"
+                tools:text="Title"
+                android:layout_marginStart="@dimen/sw_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/check_active"
+                app:layout_constraintBottom_toBottomOf="@id/check_active"/>
+
+            <TextView
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:id="@+id/time_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sw_10dp"
+                android:gravity="center_vertical"
+                android:text='@{"Start: "+tasks.timeStart}'
+                android:padding="@dimen/sw_5dp"
+                android:textSize="@dimen/sw_22sp"
+                tools:text="time start"
+                 />
+            <TextView
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:id="@+id/time_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sw_10dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/sw_5dp"
+                android:text='@{"End: "+ tasks.timeEnd}'
+                tools:text="time end"
+                android:textSize="@dimen/sw_22sp"
+                />
+            <androidx.constraintlayout.helper.widget.Flow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:flow_horizontalGap="@dimen/sw_5dp"
+                app:flow_verticalGap="@dimen/sw_10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/btn_up_down"
+                app:layout_constraintStart_toStartOf="@id/title_task"
+                app:layout_constraintTop_toTopOf="@id/btn_up_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:constraint_referenced_ids="time_start,time_end"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:icon="@drawable/ic_keyboard_arrow_down"
+                app:iconSize="@dimen/sw_50dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:iconPadding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="@dimen/sw_12dp"
+                android:paddingRight="@dimen/sw_12dp"
+                android:minWidth="@dimen/sw_48dp"
+                android:minHeight="@dimen/sw_48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_active"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="@dimen/sw_5dp"
+            android:layout_marginHorizontal="@dimen/sw_20dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sw_2dp"
+                android:background="@color/blue_600"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@{tasks.note}"
+                tools:text="Note"
+                android:textAppearance="?attr/textAppearanceListItemSmall"
+                android:visibility='@{tasks.note != "" ? View.VISIBLE : View.GONE}'
+                android:textStyle="italic"
+                android:textSize="@dimen/sw_22sp"
+                android:drawablePadding="@dimen/sw_10dp"
+                app:drawableStartCompat="@drawable/ic_sticky_note_2_24"
+                />
+            <TextView
+                android:textAppearance="?attr/textAppearanceListItemSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@{tasks.location}"
+                tools:text="Location"
+                android:visibility='@{tasks.location != "" ? View.VISIBLE : View.GONE}'
+                android:textStyle="italic"
+                android:textSize="@dimen/sw_22sp"
+                android:drawablePadding="@dimen/sw_10dp"
+                app:drawableStartCompat="@drawable/ic_location"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_600">
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/sw_20dp"
+        android:gravity="end"
+        >
+        <View
+            android:layout_width="@dimen/sw_30dp"
+            android:layout_height="@dimen/sw_70dp"
+            android:layout_marginLeft="@dimen/sw_2dp"
+            android:background="@color/orange_500"
+            />
+        <View
+            android:layout_width="@dimen/sw_30dp"
+            android:layout_height="@dimen/sw_100dp"
+            android:layout_marginLeft="@dimen/sw_2dp"
+            android:background="@color/orange_300"
+            />
+        <View
+            android:layout_width="@dimen/sw_30dp"
+            android:layout_height="@dimen/sw_150dp"
+            android:layout_marginLeft="@dimen/sw_2dp"
+            android:background="@color/red_400"
+            />
+        <View
+            android:layout_width="@dimen/sw_30dp"
+            android:layout_height="@dimen/sw_80dp"
+            android:layout_marginLeft="@dimen/sw_2dp"
+            android:background="@color/red_200"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/screen_start"
+        />
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="@color/blue_200"
+        android:text="@string/app_name"
+        android:textSize="@dimen/sw_32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_start" />
+    <TextView
+        android:id="@+id/txt_slogan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/sw_10dp"
+        android:textSize="@dimen/sw_16sp"
+        android:textColor="@color/blue_300"
+        app:layout_constraintWidth_percent="0.7"
+        android:text="@string/solo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_app_name"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/get_start"
+        app:layout_constraintTop_toBottomOf="@+id/txt_slogan"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

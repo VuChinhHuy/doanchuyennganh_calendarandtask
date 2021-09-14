@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CalendarAndTasks" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryVariant">@color/blue_800</item>
+        <item name="colorSecondary">@color/orange_500</item>
+        <item name="colorSecondaryVariant">@color/orange_400</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/blue_50</item>
+        <item name="colorSurface">@color/white_50</item>
+        <item name="colorPrimarySurfaceVariant">?attr/colorPrimaryVariant</item>
+        <item name="colorError">@color/red_400</item>
+
+        <item name="colorOnPrimary">@color/white_50</item>
+        <item name="colorOnSecondary">@color/black_900</item>
+        <item name="colorOnBackground">@color/black_900</item>
+        <item name="colorOnSurface">@color/black_900</item>
+        <item name="colorOnError">@color/black_900</item>
+
+        <item name="scrimBackground">@color/white_50_alpha_060</item>
+        <item name="android:statusBarColor">@color/blue_50_alpha_060</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+
+
+
+        <item name="navigationViewStyle">@style/NavigationView</item>
+        <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface</item>
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+        <item name="buttonIconOnly">@style/Widget.App.Button.OutlinedButton.IconOnly</item>
+
+
+        <item name="textAppearanceHeadline2">@style/TextAppearance.CalendarAndTasks.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.CalendarAndTasks.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.CalendarAndTasks.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.CalendarAndTasks.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.CalendarAndTasks.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.CalendarAndTasks.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.CalendarAndTasks.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.CalendarAndTasks.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.CalendarAndTasks.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.CalendarAndTasks.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.CalendarAndTasks.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.CalendarAndTasks.Overline</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/sw_50dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/sw_10dp"
+            android:layout_toStartOf="@+id/btn_done"
+            android:background="@color/blue_200"
+            android:gravity="center"
+            android:padding="@dimen/sw_5dp"
+            android:text="Detail Task"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textSize="@dimen/sw_23sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginHorizontal="@dimen/sw_5dp"
+            android:layout_alignParentStart="true"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_add_task"
+            android:singleLine="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Detail"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/sw_48dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textField"
+            android:padding="@dimen/sw_5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sw_50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/sw_10dp"
+            android:text="Done"
+
+            android:textAppearance="?attr/textAppearanceButton"
+            android:textSize="@dimen/sw_23sp" />
+
+
+    </RelativeLayout>
+</layout>

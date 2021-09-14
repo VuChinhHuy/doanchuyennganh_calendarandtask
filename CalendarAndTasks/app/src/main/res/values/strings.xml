@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Calendar And Tasks</string>
+    <string name="add_list_fab">Add Tasks</string>
+    <string name="add_group_fab">Add group task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification">Notification</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >6 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="get_start">Get start</string>
+    <string name="solo">It\'s a powerful personal assistant to help you better manage your tasks</string>
+    <string name="create_account_with_email">Create account with email</string>
+    <string name="sign_in_to_get_started">Sign in to get started</string>
+    <string name="create">Create</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="new_password">New Password</string>
+    <string name="edit_profile">Edit profile</string>
+</resources>

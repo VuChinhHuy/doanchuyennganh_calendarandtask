@@ -1,0 +1,34 @@
+<vector android:height="50dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fdc8a2" android:pathData="m364,328a49.946,49.946 0,0 0,47.384 -34.153l4.616,-13.847h-8a16,16 0,0 1,-16 -16v-56h-64v56a16,16 0,0 1,-16 16l4.616,13.847a49.946,49.946 0,0 0,47.384 34.153z"/>
+    <path android:fillColor="#fdc8a2" android:pathData="m192,488h56l31.671,-107.681 -55.638,-11.297z"/>
+    <path android:fillColor="#7eb357" android:pathData="m440,280h-24l-4.616,13.847a49.946,49.946 0,0 1,-47.384 34.153,49.946 49.946,0 0,1 -47.384,-34.153l-4.616,-13.847h-33.345a40,40 0,0 0,-38.624 29.6l-16,59.421 55.638,11.3 8.331,-28.321v136h144v-104h48v-64a40,40 0,0 0,-40 -40z"/>
+    <path android:fillColor="#fdbf92" android:pathData="m392,208v40.51a72.1,72.1 0,0 1,-64 0v-40.51z"/>
+    <path android:fillColor="#fdc8a2" android:pathData="m432,488h16a32,32 0,0 0,32 -32v-72h-48z"/>
+    <path android:fillColor="#7eb357" android:pathData="m432,352v-16h-144v16a56.569,56.569 0,0 0,0 80v56h144v-56a56.569,56.569 0,0 0,0 -80z"/>
+    <path android:fillColor="#79ac54" android:pathData="m364,368c-21.441,0 -34.425,-8.145 -41.541,-14.977l11.082,-11.541c7.166,6.881 17.699,10.518 30.459,10.518 18.181,0 27.909,-7.128 32.869,-13.107l12.315,10.215c-7.15,8.619 -20.791,18.892 -45.184,18.892z"/>
+    <path android:fillColor="#fdc8a2" android:pathData="m288,456h64l59.668,23.867a113.7,113.7 0,0 0,42.232 8.133,26.1 26.1,0 0,0 26.1,-26.1 26.1,26.1 0,0 0,-21.565 -25.7l-114.435,-20.2h-32l-24,8z"/>
+    <path android:fillColor="#804a32" android:pathData="m432,64a56,56 0,0 1,56 56v128a0,0 0,0 1,0 0,56 56,0 0,1 -56,-56v-128a0,0 0,0 1,0 0z"/>
+    <path android:fillColor="#fdb683" android:pathData="m280,128h8a0,0 0,0 1,0 0v48a0,0 0,0 1,0 0h-8a24,24 0,0 1,-24 -24,24 24,0 0,1 24,-24z"/>
+    <path android:fillColor="#fdc8a2" android:pathData="m360,240a72,72 0,0 1,-72 -72v-56a64,64 0,0 1,64 -64h16a64,64 0,0 1,64 64v56a72,72 0,0 1,-72 72z"/>
+    <path android:fillColor="#91563a" android:pathData="m316,160a12,12 0,1 1,12 -12,12.013 12.013,0 0,1 -12,12z"/>
+    <path android:fillColor="#91563a" android:pathData="m388,160a12,12 0,1 1,12 -12,12.013 12.013,0 0,1 -12,12z"/>
+    <path android:fillColor="#91563a" android:pathData="m272,112v24c104,-8 136,-56 136,-56l24,48 16,8v-24a88,88 0,0 0,-88 -88,88 88,0 0,0 -88,88z"/>
+    <path android:fillColor="#fdb683" android:pathData="m432,128h8a24,24 0,0 1,24 24,24 24,0 0,1 -24,24h-8a0,0 0,0 1,0 0v-48a0,0 0,0 1,0 0z"/>
+    <path android:fillColor="#fcb079" android:pathData="m352,208a24.027,24.027 0,0 1,-24 -24h16a8,8 0,0 0,16 0h16a24.027,24.027 0,0 1,-24 24z"/>
+    <path android:fillColor="#d5d5d3" android:pathData="M48,232L272,232A24,24 0,0 1,296 256L296,400A24,24 0,0 1,272 424L48,424A24,24 0,0 1,24 400L24,256A24,24 0,0 1,48 232z"/>
+    <path android:fillColor="#d5d5d3" android:pathData="m128,456h96v32h-96z"/>
+    <path android:fillColor="#dfdfdd" android:pathData="m176,488h-80l32,-128h64z"/>
+    <path android:fillColor="#c6c6c4" android:pathData="m48,256h32v16h-32z"/>
+    <path android:fillColor="#c6c6c4" android:pathData="m96,256h32v16h-32z"/>
+    <path android:fillColor="#c6c6c4" android:pathData="m144,256h32v16h-32z"/>
+    <path android:fillColor="#c6c6c4" android:pathData="m192,256h32v16h-32z"/>
+    <path android:fillColor="#c6c6c4" android:pathData="m240,256h32v16h-32z"/>
+    <path android:fillColor="#dfdfdd" android:pathData="m16,488h480v16h-480z"/>
+    <path android:fillColor="#348ed8" android:pathData="m240,184h-88l-24,48 -24,-48h-48a32,32 0,0 1,-32 -32v-80a32,32 0,0 1,32 -32h184a32,32 0,0 1,32 32v80a32,32 0,0 1,-32 32z"/>
+    <path android:fillColor="#2d7dbe" android:pathData="m200,72h40v16h-40z"/>
+    <path android:fillColor="#2d7dbe" android:pathData="m56,104h176v16h-176z"/>
+    <path android:fillColor="#2d7dbe" android:pathData="m56,136h176v16h-176z"/>
+    <path android:fillColor="#2d7dbe" android:pathData="m56,72h128v16h-128z"/>
+    <path android:fillColor="#dfdfdd" android:pathData="m256,456h104v32h-104z"/>
+</vector>

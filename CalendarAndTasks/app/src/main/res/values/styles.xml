@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Components-->
+
+    <style name="NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <!--Remove any scrim insets applied by NavigationView for system bars-->
+        <item name="insetForeground">@android:color/transparent</item>
+        <!--Set the background color of NavigationView-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+        <item name="itemTextAppearance">?attr/textAppearanceBody2</item>
+        <item name="itemTextColor">@color/color_on_surface_emphasis_medium</item>
+        <item name="itemIconTint">@color/color_on_surface_emphasis_medium</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/sw_20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/sw_10dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSize">@dimen/sw_12dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="checkedIconVisible">false</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+        <item name="chipStartPadding">@dimen/sw_16dp</item>
+        <item name="chipIconSize">@dimen/sw_32dp</item>
+        <item name="chipEndPadding">0dp</item>
+        <item name="iconPadding">@dimen/sw_10dp</item>
+        <item name="android:paddingLeft">@dimen/sw_16dp</item>
+        <item name="android:minWidth">@dimen/sw_72dp</item>
+        <item name="android:minHeight">@dimen/sw_80dp</item>
+    </style>
+    <style name="CircleImageView">
+        <item name="cornerSize">50%</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorOnBackground">@android:color/transparent</item>
+    </style>
+
+
+
+</resources>

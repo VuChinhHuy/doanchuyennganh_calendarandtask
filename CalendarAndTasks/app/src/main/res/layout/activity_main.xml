@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/coordinator_layout"
+        android:layout_height="match_parent"
+        tools:context="com.example.calendarandtasks.MainActivity">
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation_graph"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="@dimen/sw_50dp"
+            android:layout_height="@dimen/sw_50dp"
+            android:layout_gravity="end"
+            android:background="@color/black_800"
+            app:icon="@drawable/ic_search_24"
+            app:iconSize="@dimen/sw_32sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="end"
+            app:fabCradleRoundedCornerRadius="@dimen/sw_32dp"
+            app:fabCradleMargin="@dimen/sw_8dp"
+            app:hideOnScroll="true"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/sw_16dp"
+                app:menu="@menu/menu_bottom"
+                style="@style/NavigationView"
+                />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/add_group_fab"
+            android:minWidth="@dimen/sw_32dp"
+            android:minHeight="@dimen/sw_48dp"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:srcCompat="@drawable/ic_baseline_playlist_add_24"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
